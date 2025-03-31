@@ -1,0 +1,24 @@
+MHS ISAM Account History AND Tasks 
+
+SELECT h.accountnumber
+    ,TO_VARCHAR(h.period, 'MM-01-YYYY') AS HISTORY_PERIOD
+	,h.owner_name__c AS History_Account_Owner
+    ,a.owner_name__c AS Current_Account_Owner
+	,a.name AS Account_Name
+	,a.ID AS Account_ID
+	,a.common_entity_name__c
+	,a.common_entity_id__c
+	,a.accountnumber
+    ,a.territory_id__c
+	,t.whatid
+	,t.id AS Task_ID
+    ,t.dm_discussion__c
+    ,t.ownerid AS Activity_Owner_ID
+    ,t.subject
+	,CASE WHEN t.dm_discussion__c = 'true'THEN 1 ELSE 0 END AS Discussion_with_decision_maker
+	,t.activitydate
+	,TO_VARCHAR(t.activitydate, 'MM-01-YYYY') AS ACTIVITY_PERIOD
+FROM SBX_PSAS_DB.SALES_OPS_GOV.ISAM_MHS_MAPPING_HIST h
+LEFT JOIN PRD_ENT_PL_DATALAKE_DB.PHARMA2_SFDC.Account a ON h.accountnumber = a.accountnumber
+LEFT JOIN PRD_ENT_PL_DATALAKE_DB.PHARMA2_SFDC.V_TASK t ON t.whatid = a.ID
+	AND TO_VARCHAR(t.activitydate, 'MM-01-YYYY') = TO_VARCHAR(h.period, 'MM-01-YYYY')

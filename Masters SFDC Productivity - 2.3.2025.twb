@@ -1,0 +1,1125 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.24.0803.0344                               -->
+<workbook original-version='18.1' source-build='2023.3.9 (20233.24.0803.0344)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY) (SALES_OPS_GOV)' inline='true' name='federated.12bwd6313ll5hn13llltc1m6jnjk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mckesson.east-us-2.azure.snowflakecomputing.com' name='snowflake.01bb8cg0y8px7f191i0ij0a4lnij'>
+            <connection authentication='oauth' class='snowflake' dbname='SBX_PSAS_DB' instanceurl='https://mckesson.east-us-2.azure.snowflakecomputing.com' odbc-connect-string-extras='' one-time-sql='' role='SBX_EA_GENERAL_FR' schema='SALES_OPS_GOV' server='mckesson.east-us-2.azure.snowflakecomputing.com' server-oauth='' service='SBX_EA_GENERAL_FR' username='EYGO40N' warehouse='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='snowflake.01bb8cg0y8px7f191i0ij0a4lnij' name='T_MASTERS_SFDC_PRODUCTIVITY' table='[SBX_PSAS_DB].[SALES_OPS_GOV].[T_MASTERS_SFDC_PRODUCTIVITY]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='snowflake.01bb8cg0y8px7f191i0ij0a4lnij' name='T_MASTERS_SFDC_PRODUCTIVITY' table='[SBX_PSAS_DB].[SALES_OPS_GOV].[T_MASTERS_SFDC_PRODUCTIVITY]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>CUST_ACCT_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CUST_ACCT_ID]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>CUST_ACCT_ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>40</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MONTH_START_DT</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[MONTH_START_DT]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>MONTH_START_DT</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ACCOUNT_OWNER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ACCOUNT_OWNER]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>ACCOUNT_OWNER</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>121</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MANAGER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MANAGER]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>MANAGER</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>1300</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CAREER_LEVEL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CAREER_LEVEL]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>CAREER_LEVEL</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16777216</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LEVEL_START_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[LEVEL_START_DATE]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>LEVEL_START_DATE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LEVEL_END_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[LEVEL_END_DATE]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>LEVEL_END_DATE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LEVEL_STATUS_DSCR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LEVEL_STATUS_DSCR]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>LEVEL_STATUS_DSCR</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SFDC_ACCOUNT_OWNER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SFDC_ACCOUNT_OWNER]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>SFDC_ACCOUNT_OWNER</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>1300</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SFDC_ACCOUNT_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SFDC_ACCOUNT_NAME]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>SFDC_ACCOUNT_NAME</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SFDC_ACCOUNT_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SFDC_ACCOUNT_ID]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>SFDC_ACCOUNT_ID</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>18</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SFDC_ACCT_NUMBER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SFDC_ACCT_NUMBER]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>SFDC_ACCT_NUMBER</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>40</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SFDC_TERR_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SFDC_TERR_ID]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>SFDC_TERR_ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>9</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TASK_WHAT_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TASK_WHAT_ID]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>TASK_WHAT_ID</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>18</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TASK_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TASK_ID]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>TASK_ID</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>18</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TASK_CALL_DMC_FLAG</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TASK_CALL_DMC_FLAG]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>TASK_CALL_DMC_FLAG</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TASK_ACTIVITY_OWNER_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TASK_ACTIVITY_OWNER_ID]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>TASK_ACTIVITY_OWNER_ID</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>18</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TASK_SUBJECT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TASK_SUBJECT]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>TASK_SUBJECT</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TASK_ACTIVITY_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[TASK_ACTIVITY_DATE]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>TASK_ACTIVITY_DATE</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TASK_MONTH_START</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TASK_MONTH_START]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>TASK_MONTH_START</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16777216</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TASK_CALL_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TASK_CALL_TYPE]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>TASK_CALL_TYPE</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>40</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TASK_SUB_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TASK_SUB_TYPE]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>TASK_SUB_TYPE</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>40</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TASK_DMC_CALL_CNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[TASK_DMC_CALL_CNT]</local-name>
+            <parent-name>[T_MASTERS_SFDC_PRODUCTIVITY]</parent-name>
+            <remote-alias>TASK_DMC_CALL_CNT</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>1</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Account Owner' datatype='string' name='[ACCOUNT_OWNER]' role='dimension' type='nominal' />
+      <column caption='Career Level' datatype='string' name='[CAREER_LEVEL]' role='dimension' type='nominal' />
+      <column caption='Cust Acct Id' datatype='string' name='[CUST_ACCT_ID]' role='dimension' type='nominal' />
+      <column caption='Total Cust Count' datatype='integer' name='[Calculation_678636211053137920]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([CUST_ACCT_ID])' />
+      </column>
+      <column caption='Calls Logged' datatype='integer' name='[Calculation_678636211053928450]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([TASK_ID])' />
+      </column>
+      <column caption='DMC Engagement %' datatype='real' default-format='p0.0%' name='[Calculation_678636211059015687]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_678636211066368010]) / ([Calculation_678636211053137920])' />
+      </column>
+      <column caption='DMC Cust Calls Logged' datatype='integer' name='[Calculation_678636211066368010]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [MONTH_START_DT],[CUST_ACCT_ID]: MAX([TASK_DMC_CALL_CNT])}' />
+      </column>
+      <column caption='Level End Date' datatype='date' name='[LEVEL_END_DATE]' role='dimension' type='ordinal' />
+      <column caption='Level Start Date' datatype='date' name='[LEVEL_START_DATE]' role='dimension' type='ordinal' />
+      <column caption='Level Status Dscr' datatype='string' name='[LEVEL_STATUS_DSCR]' role='dimension' type='nominal' />
+      <column caption='Manager' datatype='string' name='[MANAGER]' role='dimension' type='nominal' />
+      <column caption='Month Start Dt' datatype='date' name='[MONTH_START_DT]' role='dimension' type='ordinal' />
+      <column caption='Sfdc Account Id' datatype='string' name='[SFDC_ACCOUNT_ID]' role='dimension' type='nominal' />
+      <column caption='Sfdc Account Name' datatype='string' name='[SFDC_ACCOUNT_NAME]' role='dimension' type='nominal' />
+      <column caption='Sfdc Account Owner' datatype='string' name='[SFDC_ACCOUNT_OWNER]' role='dimension' type='nominal' />
+      <column caption='Sfdc Acct Number' datatype='string' name='[SFDC_ACCT_NUMBER]' role='dimension' type='nominal' />
+      <column caption='Sfdc Terr Id' datatype='string' name='[SFDC_TERR_ID]' role='dimension' type='nominal' />
+      <column caption='DMC Calls Logged' datatype='integer' name='[TASK_DMC_CALL_CNT]' role='measure' type='quantitative' />
+      <column caption='Task Id' datatype='string' name='[TASK_ID]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='T_MASTERS_SFDC_PRODUCTIVITY' datatype='table' name='[__tableau_internal_object_id__].[T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='T_MASTERS_SFDC_PRODUCTIVITY' id='T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY)_89CA4B899E13421497A3A7D24791B4B2'>
+            <properties context=''>
+              <relation connection='snowflake.01bb8cg0y8px7f191i0ij0a4lnij' name='T_MASTERS_SFDC_PRODUCTIVITY' table='[SBX_PSAS_DB].[SALES_OPS_GOV].[T_MASTERS_SFDC_PRODUCTIVITY]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.12bwd6313ll5hn13llltc1m6jnjk'>
+      <datasources>
+        <datasource caption='T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY) (SALES_OPS_GOV)' name='federated.12bwd6313ll5hn13llltc1m6jnjk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.12bwd6313ll5hn13llltc1m6jnjk'>
+        <column caption='Manager' datatype='string' name='[MANAGER]' role='dimension' type='nominal' />
+        <column-instance column='[MANAGER]' derivation='None' name='[none:MANAGER:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.12bwd6313ll5hn13llltc1m6jnjk].[none:MANAGER:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='%null%' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Brian Besse&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Chris Fuller&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Corey Jones&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Don Hunt&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Dustin Hill&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Edwin Cabrera&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Gabe Rodriguez&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Hunter Deneke&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Jason Smith&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Katie Hicks&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Kelly Harre&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Mark Odom&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Mark Roy&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Mike Woods&quot;' />
+          <groupfilter function='member' level='[none:MANAGER:nk]' member='&quot;Pam Schneider&quot;' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Dec Example'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>December 24&apos; Data Sample</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY) (SALES_OPS_GOV)' name='federated.12bwd6313ll5hn13llltc1m6jnjk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12bwd6313ll5hn13llltc1m6jnjk'>
+            <column caption='Cust Acct Id' datatype='string' name='[CUST_ACCT_ID]' role='dimension' type='nominal' />
+            <column caption='Total Cust Count' datatype='integer' name='[Calculation_678636211053137920]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([CUST_ACCT_ID])' />
+            </column>
+            <column caption='Calls Logged' datatype='integer' name='[Calculation_678636211053928450]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([TASK_ID])' />
+            </column>
+            <column caption='DMC Engagement %' datatype='real' default-format='p0.0%' name='[Calculation_678636211059015687]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_678636211066368010]) / ([Calculation_678636211053137920])' />
+            </column>
+            <column caption='DMC Cust Calls Logged' datatype='integer' name='[Calculation_678636211066368010]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [MONTH_START_DT],[CUST_ACCT_ID]: MAX([TASK_DMC_CALL_CNT])}' />
+            </column>
+            <column caption='Manager' datatype='string' name='[MANAGER]' role='dimension' type='nominal' />
+            <column caption='Month Start Dt' datatype='date' name='[MONTH_START_DT]' role='dimension' type='ordinal' />
+            <column caption='DMC Calls Logged' datatype='integer' name='[TASK_DMC_CALL_CNT]' role='measure' type='quantitative' />
+            <column caption='Task Id' datatype='string' name='[TASK_ID]' role='dimension' type='nominal' />
+            <column-instance column='[MONTH_START_DT]' derivation='MY' name='[my:MONTH_START_DT:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[MANAGER]' derivation='None' name='[none:MANAGER:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_678636211066368010]' derivation='Sum' name='[sum:Calculation_678636211066368010:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TASK_DMC_CALL_CNT]' derivation='Sum' name='[sum:TASK_DMC_CALL_CNT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_678636211053137920]' derivation='User' name='[usr:Calculation_678636211053137920:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_678636211053928450]' derivation='User' name='[usr:Calculation_678636211053928450:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_678636211059015687]' derivation='User' name='[usr:Calculation_678636211059015687:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12bwd6313ll5hn13llltc1m6jnjk].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[usr:Calculation_678636211053137920:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[usr:Calculation_678636211053928450:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[sum:TASK_DMC_CALL_CNT:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[sum:Calculation_678636211066368010:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[usr:Calculation_678636211059015687:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.12bwd6313ll5hn13llltc1m6jnjk].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[usr:Calculation_678636211053137920:qk]&quot;</bucket>
+              <bucket>&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[usr:Calculation_678636211053928450:qk]&quot;</bucket>
+              <bucket>&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[sum:TASK_DMC_CALL_CNT:qk]&quot;</bucket>
+              <bucket>&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[sum:Calculation_678636211066368010:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.12bwd6313ll5hn13llltc1m6jnjk].[my:MONTH_START_DT:ok]'>
+            <groupfilter function='member' level='[my:MONTH_START_DT:ok]' member='202412' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.12bwd6313ll5hn13llltc1m6jnjk].[none:MANAGER:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.12bwd6313ll5hn13llltc1m6jnjk].[usr:Calculation_678636211053137920:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.12bwd6313ll5hn13llltc1m6jnjk].[none:MANAGER:nk]</column>
+            <column>[federated.12bwd6313ll5hn13llltc1m6jnjk].[:Measure Names]</column>
+            <column>[federated.12bwd6313ll5hn13llltc1m6jnjk].[my:MONTH_START_DT:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.12bwd6313ll5hn13llltc1m6jnjk].[none:MANAGER:nk]' value='28' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.12bwd6313ll5hn13llltc1m6jnjk].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>[federated.12bwd6313ll5hn13llltc1m6jnjk].[none:MANAGER:nk]</rows>
+        <cols>[federated.12bwd6313ll5hn13llltc1m6jnjk].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{2CE64607-E53B-478C-B6A9-22FDB015BAEF}' />
+    </worksheet>
+    <worksheet name='Monthly Example'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Monthly Example</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='T_MASTERS_SFDC_PRODUCTIVITY (SBX_PSAS_DB.T_MASTERS_SFDC_PRODUCTIVITY) (SALES_OPS_GOV)' name='federated.12bwd6313ll5hn13llltc1m6jnjk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12bwd6313ll5hn13llltc1m6jnjk'>
+            <column caption='Cust Acct Id' datatype='string' name='[CUST_ACCT_ID]' role='dimension' type='nominal' />
+            <column caption='Total Cust Count' datatype='integer' name='[Calculation_678636211053137920]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([CUST_ACCT_ID])' />
+            </column>
+            <column caption='Calls Logged' datatype='integer' name='[Calculation_678636211053928450]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([TASK_ID])' />
+            </column>
+            <column caption='DMC Engagement %' datatype='real' default-format='p0.0%' name='[Calculation_678636211059015687]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_678636211066368010]) / ([Calculation_678636211053137920])' />
+            </column>
+            <column caption='DMC Cust Calls Logged' datatype='integer' name='[Calculation_678636211066368010]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [MONTH_START_DT],[CUST_ACCT_ID]: MAX([TASK_DMC_CALL_CNT])}' />
+            </column>
+            <column caption='Manager' datatype='string' name='[MANAGER]' role='dimension' type='nominal' />
+            <column caption='Month Start Dt' datatype='date' name='[MONTH_START_DT]' role='dimension' type='ordinal' />
+            <column caption='DMC Calls Logged' datatype='integer' name='[TASK_DMC_CALL_CNT]' role='measure' type='quantitative' />
+            <column caption='Task Id' datatype='string' name='[TASK_ID]' role='dimension' type='nominal' />
+            <column-instance column='[MONTH_START_DT]' derivation='MY' name='[my:MONTH_START_DT:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[MANAGER]' derivation='None' name='[none:MANAGER:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_678636211066368010]' derivation='Sum' name='[sum:Calculation_678636211066368010:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TASK_DMC_CALL_CNT]' derivation='Sum' name='[sum:TASK_DMC_CALL_CNT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_678636211053137920]' derivation='User' name='[usr:Calculation_678636211053137920:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_678636211053928450]' derivation='User' name='[usr:Calculation_678636211053928450:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_678636211059015687]' derivation='User' name='[usr:Calculation_678636211059015687:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12bwd6313ll5hn13llltc1m6jnjk].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[usr:Calculation_678636211053137920:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[usr:Calculation_678636211053928450:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[sum:TASK_DMC_CALL_CNT:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[sum:Calculation_678636211066368010:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[usr:Calculation_678636211059015687:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.12bwd6313ll5hn13llltc1m6jnjk].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[usr:Calculation_678636211053137920:qk]&quot;</bucket>
+              <bucket>&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[usr:Calculation_678636211053928450:qk]&quot;</bucket>
+              <bucket>&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[sum:TASK_DMC_CALL_CNT:qk]&quot;</bucket>
+              <bucket>&quot;[federated.12bwd6313ll5hn13llltc1m6jnjk].[sum:Calculation_678636211066368010:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.12bwd6313ll5hn13llltc1m6jnjk].[none:MANAGER:nk]</column>
+            <column>[federated.12bwd6313ll5hn13llltc1m6jnjk].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.12bwd6313ll5hn13llltc1m6jnjk].[none:MANAGER:nk]' value='28' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.12bwd6313ll5hn13llltc1m6jnjk].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>[federated.12bwd6313ll5hn13llltc1m6jnjk].[my:MONTH_START_DT:ok]</rows>
+        <cols>[federated.12bwd6313ll5hn13llltc1m6jnjk].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{FDCB712A-97A5-47DC-82D7-711863ED9AC3}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Monthly Example'>
+      <cards>
+        <edge name='left'>
+          <strip size='178'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.12bwd6313ll5hn13llltc1m6jnjk].[my:MONTH_START_DT:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0788DD34-4BCB-4DAD-B262-082405E9EDF1}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Dec Example'>
+      <cards>
+        <edge name='left'>
+          <strip size='178'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FFB99CA5-9883-42D4-8E69-E611FC7B40C1}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dec Example' width='192'>
+      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
+      tK0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Monthly Example' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
